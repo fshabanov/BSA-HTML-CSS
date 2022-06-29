@@ -5,11 +5,44 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<link rel="stylesheet" href="./index.css" />
+		<script
+			src="https://kit.fontawesome.com/41538db351.js"
+			crossorigin="anonymous"
+		></script>
 		<title>Bulka TV</title>
 	</head>
 	<body>
 		<div class="container">
-			<header>Header</header>
+			<header>
+				<!-- Logo -->
+				<div class="logo">
+					<i class="fa-solid fa-cat"></i>
+					<span>Bulka TV</span>
+				</div>
+				<!-- Search -->
+				<div class="search">
+					<input type="text" placeholder="Search" class="input" />
+					<i class="fa-solid fa-microphone animatedIcon"></i>
+				</div>
+				<!-- Buttons -->
+				<div class="buttons">
+					<i class="fa-solid fa-bell animatedIcon"></i>
+					<div class="paw">
+						<i class="fa-solid fa-paw animatedIcon"></i>
+						<div class="dropdown">
+							<div class="dropdown-element">
+								<i class="fa-solid fa-paw"></i> Profile
+							</div>
+							<div class="dropdown-element">
+								<i class="fa-solid fa-gear"></i> Settings
+							</div>
+							<div class="dropdown-element element-danger">
+								<i class="fa-solid fa-arrow-right-from-bracket"></i> Logout
+							</div>
+						</div>
+					</div>
+				</div>
+			</header>
 			<aside>Aside</aside>
 			<div class="main-content">Content</div>
 			<footer>Footer</footer>

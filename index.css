@@ -3,8 +3,10 @@
 }
 
 header {
-	background-color: red;
 	grid-area: header;
+	margin: 20px;
+	display: flex;
+	justify-content: space-between;
 }
 
 aside {
@@ -31,4 +33,68 @@ footer {
 		"header header"
 		"aside main"
 		"footer footer";
+}
+
+.logo {
+	color: orange;
+	font-size: 2rem;
+}
+
+.search {
+	font-size: 1.5rem;
+	display: flex;
+	align-items: center;
+}
+
+.input {
+	padding: 10px;
+	width: 300px;
+	margin-right: 20px;
+}
+
+i {
+	cursor: pointer;
+}
+
+.animatedIcon {
+	opacity: 0.3;
+	padding: 10px;
+	border-radius: 50%;
+	transition: all 200ms ease-in;
+}
+
+.animatedIcon:hover {
+	opacity: 1;
+	background-color: orange;
+}
+
+.dropdown {
+	display: none;
+	position: absolute;
+	right: 10px;
+	z-index: 1;
+	background-color: white;
+}
+
+.dropdown-element {
+	padding: 10px;
+	border-bottom: 1px solid #ccc;
+	cursor: pointer;
+}
+
+.dropdown-element:hover {
+	background-color: #ccc;
+}
+
+.element-danger {
+	color: red;
+}
+
+.buttons {
+	display: flex;
+	align-items: center;
+}
+
+.paw:hover .dropdown {
+	display: block;
 }
