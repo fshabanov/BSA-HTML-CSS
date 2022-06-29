@@ -1,0 +1,34 @@
+* {
+	margin: 0;
+}
+
+header {
+	background-color: red;
+	grid-area: header;
+}
+
+aside {
+	background-color: green;
+	grid-area: aside;
+}
+
+.main-content {
+	background-color: blue;
+	grid-area: main;
+}
+
+footer {
+	background-color: pink;
+	grid-area: footer;
+}
+
+.container {
+	min-height: 100vh;
+	display: grid;
+	grid-template-columns: 300px 1fr;
+	grid-template-rows: 70px 1fr 70px;
+	grid-template-areas:
+		"header header"
+		"aside main"
+		"footer footer";
+}
