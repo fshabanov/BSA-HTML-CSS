@@ -13,6 +13,7 @@
 	</head>
 	<body>
 		<div class="container">
+			<!-- Header -->
 			<header>
 				<!-- Logo -->
 				<div class="logo">
@@ -21,14 +22,17 @@
 				</div>
 				<!-- Search -->
 				<div class="search">
-					<input type="text" placeholder="Search" class="input" />
+					<div class="input-container">
+						<input type="text" placeholder="Search" class="input" />
+						<i class="fa-solid fa-magnifying-glass search-icon"></i>
+					</div>
 					<i class="fa-solid fa-microphone animatedIcon"></i>
 				</div>
 				<!-- Buttons -->
 				<div class="buttons">
-					<i class="fa-solid fa-bell animatedIcon"></i>
+					<i class="fa-solid fa-bell animatedIcon animate"></i>
 					<div class="paw">
-						<i class="fa-solid fa-paw animatedIcon"></i>
+						<i class="fa-solid fa-paw paw-icon"></i>
 						<div class="dropdown">
 							<div class="dropdown-element">
 								<i class="fa-solid fa-paw"></i> Profile
@@ -43,9 +47,18 @@
 					</div>
 				</div>
 			</header>
+			<!-- End of header -->
+
+			<!-- Aside -->
 			<aside>Aside</aside>
-			<div class="main-content">Content</div>
-			<footer>Footer</footer>
+			<div class="main-content">
+				<div class="slider"></div>
+				<div class="carousel"></div>
+				<div class="content"></div>
+				<div class="footer">
+					Inspired by Kittisaurus <i class="fa-brands fa-youtube"></i>
+				</div>
+			</div>
 		</div>
 	</body>
 </html>

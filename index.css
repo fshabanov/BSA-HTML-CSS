@@ -4,52 +4,90 @@
 
 header {
 	grid-area: header;
-	margin: 20px;
+	padding: 20px;
 	display: flex;
 	justify-content: space-between;
+	position: fixed;
+	background-color: white;
+	width: 100%;
+	box-sizing: border-box;
 }
 
 aside {
-	background-color: green;
+	background-color: #ebebeb;
 	grid-area: aside;
+	margin-top: 20px;
 }
 
 .main-content {
-	background-color: blue;
+	/* background-color: blue; */
 	grid-area: main;
-}
-
-footer {
-	background-color: pink;
-	grid-area: footer;
+	margin-top: 20px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 }
 
 .container {
+	position: relative;
 	min-height: 100vh;
 	display: grid;
 	grid-template-columns: 300px 1fr;
-	grid-template-rows: 70px 1fr 70px;
+	grid-template-rows: 70px 1fr;
 	grid-template-areas:
 		"header header"
-		"aside main"
-		"footer footer";
+		"aside main";
 }
 
 .logo {
 	color: orange;
 	font-size: 2rem;
+	flex: 1;
+}
+
+.logo span {
+	cursor: pointer;
 }
 
 .search {
 	font-size: 1.5rem;
 	display: flex;
+	flex: 1;
 	align-items: center;
+}
+
+.input-container {
+	margin-right: 20px;
+	flex: 1;
+	display: flex;
+	align-items: center;
+	position: relative;
+}
+
+.search-icon {
+	background-color: #ddd;
+	padding: 6px;
+	position: absolute;
+	right: 1px;
+	border-radius: 4px;
+	transition: all 200ms ease-in;
+}
+
+.search-icon:hover {
+	background-color: #ccc;
 }
 
 .input {
 	padding: 10px;
-	width: 300px;
-	margin-right: 20px;
+	width: 100%;
+	flex: 1 1 300px;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+}
+
+input[type="text"]:focus {
+	outline: none;
+	border: 2px solid orange;
 }
 
 i {
@@ -66,6 +104,18 @@ i {
 .animatedIcon:hover {
 	opacity: 1;
 	background-color: orange;
+}
+
+.paw-icon {
+	background-color: orange;
+	padding: 10px;
+	margin-left: 10px;
+	border-radius: 50%;
+	transition: all 200ms ease-in;
+}
+
+.paw-icon:hover {
+	background-color: #ddd;
 }
 
 .dropdown {
@@ -93,8 +143,26 @@ i {
 .buttons {
 	display: flex;
 	align-items: center;
+	flex: 1;
+	justify-content: end;
 }
 
 .paw:hover .dropdown {
 	display: block;
+}
+
+.slider {
+	flex: 1;
+}
+
+.carousel {
+	flex: 1;
+}
+
+.content {
+	flex: 1;
+}
+
+.footer {
+	margin: 20px 0;
 }
