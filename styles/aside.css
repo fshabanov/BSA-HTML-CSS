@@ -1,0 +1,147 @@
+aside {
+	display: flex;
+	flex-direction: column;
+}
+
+.users {
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+	overflow-y: auto;
+	max-height: 70vh;
+}
+
+.user {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 10px;
+	cursor: pointer;
+}
+
+.user:hover {
+	background-color: #ccc;
+}
+
+.user-name:hover {
+	color: blue;
+}
+
+.user-name {
+	width: 150px;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+.user-info {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 10px;
+}
+
+.user-avatar {
+	background-color: white;
+	border-radius: 50%;
+	width: 40px;
+	height: 40px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.user-avatar img {
+	object-fit: contain;
+	width: 30px;
+	height: 30px;
+	border-radius: 50%;
+}
+
+.user-activity {
+	display: flex;
+	align-items: center;
+}
+
+.aside-footer-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 80%;
+	height: auto;
+	margin: auto;
+	background-color: #ccc;
+	padding: 20px 0;
+	margin-bottom: 20px;
+}
+
+.aside-footer {
+	position: sticky;
+	bottom: 20px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	gap: 20px;
+	font-size: 1.5rem;
+	width: 100%;
+	text-align: center;
+}
+
+.pulse {
+	margin-right: 5px;
+	background-color: red;
+	width: 10px;
+	height: 10px;
+	border-radius: 50%;
+	animation: pulse 2s infinite;
+}
+
+.social {
+	width: 50%;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.social i:hover {
+	color: blue;
+}
+
+@keyframes pulse {
+	0% {
+		transform: scale(1);
+	}
+	50% {
+		transform: scale(1.2);
+	}
+	100% {
+		transform: scale(1);
+	}
+}
+
+@media screen and (max-width: 1200px) {
+	.user-activity,
+	.user-name {
+		display: none;
+	}
+
+	.container {
+		grid-template-columns: 70px 1fr;
+	}
+
+	.aside-footer-container {
+		width: 95%;
+	}
+
+	.aside-footer {
+		font-size: 0.8rem;
+	}
+	.social i {
+		margin-right: 7px;
+	}
+
+	.social i:last-child {
+		margin-right: 0;
+	}
+}
