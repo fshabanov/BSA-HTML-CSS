@@ -60,6 +60,7 @@
 	text-transform: uppercase;
 	border-radius: 5px;
 	cursor: pointer;
+	z-index: 1;
 }
 
 .description {
@@ -85,11 +86,11 @@
 }
 
 .video-title h4:hover,
-.video-title p:hover {
+.video-title h5:hover {
 	color: blue;
 }
 
-.video-title p {
+.video-title h5 {
 	white-space: nowrap;
 	overflow: hidden;
 	text-overflow: ellipsis;
