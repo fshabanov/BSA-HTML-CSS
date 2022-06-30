@@ -1,6 +1,12 @@
 aside {
+	position: fixed;
+	top: 70px;
 	display: flex;
 	flex-direction: column;
+	background-color: #ebebeb;
+	grid-area: aside;
+	margin-top: 20px;
+	height: calc(100vh - 90px);
 }
 
 .users {
@@ -131,17 +137,10 @@ aside {
 	}
 
 	.aside-footer-container {
-		width: 95%;
+		display: none;
 	}
 
-	.aside-footer {
-		font-size: 0.8rem;
-	}
-	.social i {
-		margin-right: 7px;
-	}
-
-	.social i:last-child {
-		margin-right: 0;
+	.users {
+		max-height: 100vh;
 	}
 }
