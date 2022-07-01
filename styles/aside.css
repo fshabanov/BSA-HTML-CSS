@@ -7,7 +7,6 @@ aside {
 	grid-area: aside;
 	margin-top: 20px;
 	height: calc(100vh - 90px);
-	padding-left: 10px;
 }
 
 .users {
@@ -24,6 +23,7 @@ aside {
 	align-items: center;
 	padding: 10px;
 	cursor: pointer;
+	padding-left: 20px;
 }
 
 .user:hover {
@@ -56,6 +56,7 @@ aside {
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	margin-right: 10px;
 }
 
 .user-avatar img {
@@ -80,7 +81,7 @@ aside {
 	background-color: #ccc;
 	padding: 20px 0;
 	margin-bottom: 20px;
-	margin-left: 10px;
+	margin-left: 20px;
 }
 
 .aside-footer {
@@ -90,7 +91,6 @@ aside {
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
-	/* gap: 20px; */
 	font-size: 1.5rem;
 	width: 100%;
 	text-align: center;
@@ -110,6 +110,7 @@ aside {
 	display: flex;
 	justify-content: space-around;
 	align-items: center;
+	margin-top: 20px;
 }
 
 .social i:hover {

@@ -39,6 +39,17 @@
 	background-color: orange;
 }
 
+.opacity-animated {
+	opacity: 0.3;
+	padding: 10px;
+	border-radius: 50%;
+	transition: all 200ms ease-in;
+}
+
+.opacity-animated:hover {
+	opacity: 1;
+}
+
 .slider {
 	display: flex;
 	flex-wrap: nowrap;
@@ -47,7 +58,7 @@
 	overflow-x: scroll;
 	width: 100%;
 	padding-bottom: 20px;
-	margin-top: 15px;
+	margin-top: 17px;
 }
 
 .slider-element {
@@ -57,10 +68,14 @@
 	padding: 0 20px;
 	white-space: nowrap;
 	cursor: pointer;
-	height: 35px;
+	height: 38px;
 	display: flex;
 	justify-content: center;
 	align-items: center;
+}
+
+.slider-element:hover {
+	background-color: #ccc;
 }
 
 .slider-element:first-child {
@@ -71,10 +86,6 @@
 .slider::-webkit-scrollbar {
 	display: none;
 }
-
-/* .carousel {
-	flex: 1;
-} */
 
 .content {
 	flex: 1;

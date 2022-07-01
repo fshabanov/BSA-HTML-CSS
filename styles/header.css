@@ -115,3 +115,7 @@ i {
 .paw:hover .dropdown {
 	display: block;
 }
+
+.fa-bell {
+	font-size: 1.5rem;
+}

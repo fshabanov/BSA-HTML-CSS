@@ -54,6 +54,7 @@
 	position: absolute;
 	width: 600px;
 	height: 100%;
+	cursor: pointer;
 }
 
 .carousel-description {
