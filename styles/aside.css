@@ -102,7 +102,7 @@ aside {
 	width: 10px;
 	height: 10px;
 	border-radius: 50%;
-	animation: pulse 2s infinite;
+	animation: pulse 2s infinite cubic-bezier(1, 1, 0.21, 1.78);
 }
 
 .social {
